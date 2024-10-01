@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scratch-AC1</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="header">
+      <img src="./logo/Logo.png" width="5%" class="img-responsive logo1" />
+
+      <img src="./logo/header.png" class="img-responsive logo2" />
+      <button class="toggle-sidenav" onclick="toggleSidenav()">☰</button>
+      <!-- Toggle Button -->
+    </div>
+
+    <div class="container">
+      <!-- Left Side Navigation -->
+      <div class="sidenav">
+        <button onclick="showContent('intro-programming')">
+          INTRODUCTION TO PROGRAMMING
+        </button>
+        <button onclick="showContent('intro-scratch')">
+          INTRODUCTION TO SCRATCH
+        </button>
+        <button onclick="showContent('character-movement')">
+          CHARACTER MOVEMENT
+        </button>
+        <!-- <button onclick="showContent('student-activity')">STUDENT ACTIVITY</button>
+            <button onclick="showContent('summary')">SUMMARY</button>
+            <button onclick="showContent('important-links')">IMPORTANT LINKS</button> -->
+      </div>
+
+      <!-- Right Side Content -->
+      <div class="content">
+        <!-- INTRODUCTION TO PROGRAMMING -->
+        <div id="intro-programming" class="content-section">
+          <h2>INTRODUCTION TO PROGRAMMING</h2>
+          <div style="display: flex; gap: 1rem">
+            <p>
+              Have you heard about the word programming?
+              <br> Well, let’s discuss
+              this first. 
+            </p>
+            <img src="./assets/images/image1.png" alt="" width="12%" />
+          </div>
+          <div style="display: flex; gap: 1rem">
+            <img src="./assets/images/image2.png" alt="" width="12%" />
+            <p style="color: #1230ae">
+              Programming is giving specific instructions to perform a
+              task. The instructions together are called a program. You can make
+              computers perform interesting tasks using programming. You can
+              create games, websites, and mobile apps using programming.
+            </p>
+          </div>
+
+          <!-- Full content here -->
+        </div>
+
+        <!-- INTRODUCTION TO SCRATCH -->
+        <div id="intro-scratch" class="content-section" style="display: none">
+          <h2>INTRODUCTION TO SCRATCH</h2>
+          <p>
+            We will be using
+            <a href="https://scratch.mit.edu/" target="_blank">Scratch</a> to
+            learn programming and create games.
+          </p>
+          <img src="./assets/images/scratch-interface.png" alt="" width="85%" />
+
+          <ol>
+            <li>
+              <span
+                style="
+                  color: #ff6500;
+                  text-decoration: underline;
+                  font-size: 1.8rem;
+                "
+                >Where are the code blocks? <br /></span
+              >On the left, you will find all the blocks we will use. You can
+              also see the categories of different blocks like looks, motion,
+              sound, etc. We will learn about them in a while.
+              <img
+                src="./assets/images/intro-scratch/1.png"
+                alt=""
+                width="85%"
+              />
+            </li>
+            <li>
+              <span
+                style="
+                  color: #ff6500;
+                  text-decoration: underline;
+                  font-size: 1.8rem;
+                "
+                >Code Area: <br /></span
+              >In the middle, you will be writing your program. You can drag and
+              drop blocks and join them together to create a set of
+              instructions. It’s very similar to LEGOS but for coding!
+              <img
+                src="./assets/images/intro-scratch/2.png"
+                alt=""
+                width="85%"
+              />
+            </li>
+            <li>
+              <span
+                style="
+                  color: #ff6500;
+                  text-decoration: underline;
+                  font-size: 1.8rem;
+                "
+                >Where do I see the output?<br /></span
+              >This is the stage area where you see the output.
+              <img
+                src="./assets/images/intro-scratch/3.png"
+                alt=""
+                width="85%"
+              />
+            </li>
+            <li>
+              <span
+                style="
+                  color: #ff6500;
+                  text-decoration: underline;
+                  font-size: 1.8rem;
+                "
+                >Start Code Execution: <br /></span
+              >TYou can click on the green flag to check the program's output.
+              When you have written some instructions and want the computer to
+              follow them and show you results you click on the green flag.
+              <img
+                src="./assets/images/intro-scratch/4.png"
+                alt=""
+                width="85%"
+              />
+            </li>
+            <li>
+              <span
+                style="
+                  color: #ff6500;
+                  text-decoration: underline;
+                  font-size: 1.8rem;
+                "
+                >Stop Code Execution: <br /></span
+              >Click on the red icon to stop the program.
+              <img
+                src="./assets/images/intro-scratch/5.png"
+                alt=""
+                width="85%"
+              />
+            </li>
+            <li>
+              <span
+                style="
+                  color: #ff6500;
+                  text-decoration: underline;
+                  font-size: 1.8rem;
+                "
+                >Find My Sprite: <br /></span
+              >In the bottom right you can see the sprites. Sprite is like a
+              character in your game or story.
+              <img
+                src="./assets/images/intro-scratch/6.png"
+                alt=""
+                width="85%"
+              />
+            </li>
+            <li>
+              <span
+                style="
+                  color: #ff6500;
+                  text-decoration: underline;
+                  font-size: 1.8rem;
+                "
+                >Select A Different Sprite: <br /></span
+              >You can select different sprites by clicking on the icon at the
+              bottom.<img
+                src="./assets/images/intro-scratch/7.png"
+                alt=""
+                width="85%"
+              />
+            </li>
+            <li>
+              <span
+                style="
+                  color: #ff6500;
+                  text-decoration: underline;
+                  font-size: 1.8rem;
+                "
+                >Choose a backdrop: <br /></span
+              >You can select different backdrops by clicking on the icon next
+              to it.We will learn more about it in the coming classes.<img
+                src="./assets/images/intro-scratch/8.png"
+                alt=""
+                width="85%"
+              />
+            </li>
+          </ol>
+        </div>
+
+        <!-- CHARACTER MOVEMENT USING ARROW KEYS -->
+        <div
+          id="character-movement"
+          class="content-section"
+          style="display: none"
+        >
+          <h2>CHARACTER MOVEMENT USING ARROW KEYS</h2>
+          <p>
+            You can see different categories for the blocks. At the top, you can
+            see motion. By using the blocks in this category, you can move your
+            sprites. Let’s try moving it in different directions.
+            <img src="./assets/images/char-move/1.png" alt="" width="50%" />
+          </p>
+          <p>
+            <span
+              style="
+                color: #ff6500;
+                text-decoration: underline;
+                font-size: 1.8rem;
+              "
+            >
+              Move Left and Right:</span
+            >
+            If you want the sprite to move left/right you need to change x
+            <br />
+            <br />
+            <span
+              style="
+                color: #ff6500;
+                text-decoration: underline;
+                font-size: 1.8rem;
+              "
+              >Move Up and Down:</span
+            >
+            If you want the sprite to moveand y if you want it to move up/down,
+            you need to change y. x,y coordinates are used to denote the
+            position of the sprite. <br />
+
+            Let’s try to move the sprite to the right. <br />
+<br>
+           <span style="color: #1230ae;"> Here we are trying to move the sprite 100 units to the right.👇</span>
+            <br /><br />
+            <img src="./assets/images/char-move/2.png" alt="" width="85%" />
+          </p>
+          <p>
+            But when I click on the flag icon nothing happens do you know why?🤔
+            <br />
+            Because the computer does not know when it is supposed to move the
+            sprite.<br /> <br>
+            I can tell the computer to move the sprite to the right when I press
+            the right arrow key on my keyboard. 
+            <br>
+            <span style="background-color:  rgb(251, 251, 72);;">To do that, I can go to the
+            events section and select
+            <span style="color: #1230ae">“when key pressed block”.</span><br /></span>
+            <img src="./assets/images/char-move/9.png" alt="" width="85%" />
+           <br>
+            We can select “<span style="color: #1230ae">right arrow</span>” from
+            the drop-down menu so that the position changes only when you press
+            the right arrow key.<br />
+            <!-- <img src="./assets/images/char-move/10.png" alt="" width="85%" /> -->
+            
+          </p>
+          <img src="./assets/images/char-move/11.png" alt="" width="85%" />
+
+          <p> We can Connect the “<span style="color: #1230ae">change x</span>”
+            and “<span style="color: #1230ae">when key pressed block</span>”
+            since we want to change position when the key is pressed.<br /></p>
+            <img src="./assets/images/char-move/3.png" alt="" width="85%" />
+          <p>
+            Let’s check the output.<br />
+            We can press the green flag to see
+            the output.<br />
+            <img src="./assets/images/char-move/12.png" alt="" width="85%" /> <br>
+           <span style="background-color: rgb(251, 251, 72);"> How can we make it go left by 100 units? 🤔</span><br />
+          
+            We will again take the “<span style="color: #1230ae"
+              >when key pressed block</span
+            >”, choose “<span style="color: #1230ae">left arrow</span>” from the
+            dropdown, and attach the “<span style="color: #1230ae"
+              >change x by</span
+            >” block to it.<br />
+            We can again use
+            <span style="color: #1230ae">change x by</span> block but since we
+            want the sprite to move in the left direction, we need to give a “-”
+            sign before the number.<br />
+            <img src="./assets/images/char-move/4.png" alt="" width="85%" />
+          </p>
+
+          <p>
+           <span style="background-color: rgb(251, 251, 72);">Let’s try to move the sprite up and down!<br /></span> 
+            To move the sprite up and down we will need the “<span
+              style="color: #1230ae"
+              >change y by</span
+            >” block.<br />
+            Let’s try moving the sprite up by 100 units.<br />
+            To move the sprite down you need to give a “<span
+              style="color: #1230ae"
+              >-</span
+            >” sign before the number.<br />
+          <br />
+            <img src="./assets/images/char-move/5.png" alt="" width="85%" />
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
